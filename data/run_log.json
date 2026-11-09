@@ -1,17 +1,17 @@
 {
- "run_at": "2026-11-09T14:05:27+00:00",
+ "run_at": "2026-11-09T15:18:55+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
    "found": 1,
    "error": "",
-   "new": 1
+   "new": 0
   },
   "Chicago building permits": {
    "status": "ok",
    "found": 2,
    "error": "",
-   "new": 2
+   "new": 0
   },
   "Dallas building permits": {
    "status": "disabled",
