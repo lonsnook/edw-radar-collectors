@@ -4,9 +4,9 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from collectors import legistar, nc_con, socrata
+from collectors import arcgis, legistar, nc_con, socrata
 
-COLLECTORS = {"legistar": legistar.collect, "socrata": socrata.collect, "nc_con": nc_con.collect}
+COLLECTORS = {"legistar": legistar.collect, "socrata": socrata.collect, "nc_con": nc_con.collect, "arcgis": arcgis.collect}
 
 
 def load_json(path, default):

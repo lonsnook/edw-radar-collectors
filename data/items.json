@@ -1,6 +1,7 @@
 {
  "items": [
   {
+   "first_seen": "2026-11-09",
    "id": "112a1f1d250e9ec0",
    "source": "NC Certificate of Need application logs",
    "metro": "North Carolina",
@@ -12,10 +13,10 @@
    "units": null,
    "matched": [
     "nursing"
-   ],
-   "first_seen": "2026-11-09"
+   ]
   },
   {
+   "first_seen": "2026-11-09",
    "id": "533eb55ee47b2dcb",
    "source": "NC Certificate of Need application logs",
    "metro": "North Carolina",
@@ -27,10 +28,10 @@
    "units": null,
    "matched": [
     "memory care"
-   ],
-   "first_seen": "2026-11-09"
+   ]
   },
   {
+   "first_seen": "2026-11-09",
    "id": "1a6e0e1ffb570b10",
    "source": "Chicago building permits",
    "metro": "Chicago",
@@ -42,10 +43,10 @@
    "units": 90,
    "matched": [
     "apartment"
-   ],
-   "first_seen": "2026-11-09"
+   ]
   },
   {
+   "first_seen": "2026-11-09",
    "id": "52206267e9e7b1b0",
    "source": "Chicago building permits",
    "metro": "Chicago",
@@ -55,10 +56,10 @@
    "date": "2026-10-27",
    "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
    "units": 380,
-   "matched": [],
-   "first_seen": "2026-11-09"
+   "matched": []
   },
   {
+   "first_seen": "2026-11-09",
    "id": "5329850190e00403",
    "source": "Charlotte planning and zoning agendas",
    "metro": "Charlotte",
@@ -70,8 +71,7 @@
    "units": null,
    "matched": [
     "apartment"
-   ],
-   "first_seen": "2026-11-09"
+   ]
   }
  ]
 }

@@ -1,10 +1,29 @@
 {
   "include": [
-    "multifamily", "multi-family", "apartment", "senior living", "assisted living", "memory care",
-    "independent living", "continuing care", "life plan", "active adult", "age-restricted",
-    "residential care", "adult care home", "congregate", "retirement community"
+    "multifamily",
+    "multi-family",
+    "apartment",
+    "senior living",
+    "assisted living",
+    "memory care",
+    "independent living",
+    "continuing care",
+    "life plan",
+    "active adult",
+    "age-restricted",
+    "residential care",
+    "adult care home",
+    "congregate",
+    "retirement community"
   ],
-  "exclude": ["single-family", "single family", "self storage", "self-storage", "warehouse", "hotel"],
+  "exclude": [
+    "single-family",
+    "single family",
+    "self storage",
+    "self-storage",
+    "warehouse",
+    "hotel"
+  ],
   "min_units": 100,
   "sources": [
     {
@@ -12,8 +31,49 @@
       "type": "legistar",
       "metro": "Charlotte",
       "client": "charlottenc",
-      "bodies": ["Zoning", "Planning"],
+      "bodies": [
+        "Zoning",
+        "Planning"
+      ],
       "token_env": "LEGISTAR_TOKEN_CHARLOTTE",
+      "days_back": 14,
+      "days_ahead": 60,
+      "enabled": true,
+      "also_review_titles": [
+        "Rezoning Petition"
+      ]
+    },
+    {
+      "name": "Greensboro City Council agendas",
+      "type": "legistar",
+      "metro": "Triad (Greensboro)",
+      "client": "greensboro",
+      "bodies": [
+        "City Council"
+      ],
+      "also_review_titles": [
+        "rezoning",
+        "zoning"
+      ],
+      "read_attachments": false,
+      "days_back": 14,
+      "days_ahead": 60,
+      "enabled": true
+    },
+    {
+      "name": "Winston-Salem City Council agendas",
+      "type": "legistar",
+      "metro": "Triad (Winston-Salem)",
+      "client": "winston-salem",
+      "bodies": [
+        "City Council",
+        "Planning"
+      ],
+      "also_review_titles": [
+        "rezoning",
+        "zoning"
+      ],
+      "read_attachments": false,
       "days_back": 14,
       "days_ahead": 60,
       "enabled": true
@@ -29,11 +89,51 @@
       "id_field": "permit_",
       "type_field": "permit_type",
       "type_contains": "NEW CONSTRUCTION",
-      "text_fields": ["work_description", "permit_type"],
+      "text_fields": [
+        "work_description",
+        "permit_type"
+      ],
       "title_field": "work_description",
       "cost_field": "reported_cost",
       "min_cost": 3000000,
-      "address_fields": ["street_number", "street_direction", "street_name"],
+      "address_fields": [
+        "street_number",
+        "street_direction",
+        "street_name"
+      ],
+      "days_back": 21,
+      "enabled": true,
+      "contact_count": 15,
+      "units_field": "residential_unit_change"
+    },
+    {
+      "name": "Raleigh building permits",
+      "type": "arcgis",
+      "metro": "Raleigh",
+      "service_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/ArcGIS/rest/services/Building_Permits/FeatureServer/0",
+      "portal_url": "https://data.raleighnc.gov",
+      "date_field": "issueddate",
+      "id_field": "permitnum",
+      "text_fields": [
+        "proposedworkdescription",
+        "description",
+        "projectname",
+        "proposeduse",
+        "landusedescription"
+      ],
+      "title_field": "proposedworkdescription",
+      "cost_field": "estprojectcost",
+      "min_cost": 3000000,
+      "where_extra": "workclass LIKE '%New%'",
+      "units_field": "housingunitstotal",
+      "address_fields": [
+        "streetnum",
+        "streetdirectionprefix",
+        "streetname",
+        "streettype"
+      ],
+      "contractor_field": "contractorcompanyname",
+      "owner_field": "parcelownername",
       "days_back": 21,
       "enabled": true
     },
@@ -46,25 +146,44 @@
       "portal_url": "https://www.dallasopendata.com/",
       "date_field": "issued_date",
       "id_field": "permit_number",
-      "type_field": "permit_type",
-      "type_contains": "NEW",
-      "text_fields": ["work_description", "permit_type"],
+      "type_field": "",
+      "type_contains": "",
+      "text_fields": [
+        "work_description",
+        "land_use",
+        "permit_type"
+      ],
       "title_field": "work_description",
       "cost_field": "value",
       "min_cost": 3000000,
-      "address_fields": ["street_address"],
+      "address_fields": [
+        "street_address"
+      ],
       "days_back": 21,
-      "enabled": false,
-      "note": "Dataset id and field names are from memory. Check them on the Dallas portal, then set enabled to true."
+      "enabled": true,
+      "server_date_filter": false,
+      "date_format": "%m/%d/%y",
+      "limit": 50000,
+      "where_extra": "value >= 3000000 AND (upper(permit_type) like '%NEW CONSTRUCTION%' OR upper(permit_type) like '%MULTI FAMILY%')",
+      "contractor_field": "contractor"
     },
     {
       "name": "NC Certificate of Need application logs",
       "type": "nc_con",
       "metro": "North Carolina",
       "index_url": "https://info.ncdhhs.gov/dhsr/coneed/applicationlogs.html",
-      "keywords": ["assisted living", "adult care home", "nursing", "memory care", "independent living", "continuing care", "life plan"],
+      "keywords": [
+        "assisted living",
+        "adult care home",
+        "nursing",
+        "memory care",
+        "independent living",
+        "continuing care",
+        "life plan"
+      ],
       "max_pdfs": 12,
-      "enabled": true
+      "enabled": true,
+      "max_age_days": 365
     }
   ]
 }

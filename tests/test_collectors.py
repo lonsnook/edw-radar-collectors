@@ -9,7 +9,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import run_all  # noqa: E402
-from collectors import common, legistar, nc_con, socrata  # noqa: E402
+from collectors import arcgis, common, legistar, nc_con, socrata  # noqa: E402
 
 CFG = {
     "include": ["multifamily", "apartment", "assisted living", "senior living"],
@@ -97,6 +97,125 @@ class NcConTests(unittest.TestCase):
             out = nc_con.collect(src, CFG, TODAY)
         self.assertEqual(len(out), 1)
         self.assertIn("Oakwood", out[0]["title"])
+
+
+class ImprovedTests(unittest.TestCase):
+    def test_acres(self):
+        self.assertEqual(common.extract_acres("Total site area 4.5 acres"), 4.5)
+        self.assertIsNone(common.extract_acres("no size"))
+
+    def test_chicago_contacts_and_unit_change(self):
+        rows = [{
+            "permit_": "P1", "issue_date": "2026-11-05T00:00:00", "work_description": "New 11-story residential building",
+            "permit_type": "PERMIT - NEW CONSTRUCTION", "reported_cost": "52000000", "street_number": "5853", "street_name": "BROADWAY",
+            "residential_unit_change": "90",
+            "contact_1_type": "ARCHITECT", "contact_1_name": "Studio Example LLC",
+            "contact_2_type": "OWNER", "contact_2_name": "Broadway Holdings",
+            "contact_3_type": "CONTRACTOR-GENERAL CONTRACTOR", "contact_3_name": "Build Co",
+        }]
+        src = {"name": "Chicago", "metro": "Chicago", "domain": "d", "dataset": "x", "date_field": "issue_date", "id_field": "permit_",
+               "text_fields": ["work_description"], "title_field": "work_description", "cost_field": "reported_cost", "min_cost": 1,
+               "address_fields": ["street_number", "street_name"], "contact_count": 15, "units_field": "residential_unit_change"}
+        cfg = dict(CFG, min_units=50, include=["residential"])
+        with mock.patch.object(socrata, "http_get", lambda *a, **k: FakeResp(rows)):
+            out = socrata.collect(src, cfg, TODAY)
+        self.assertEqual(out[0]["architect"], "Studio Example LLC")
+        self.assertEqual(out[0]["owner"], "Broadway Holdings")
+        self.assertEqual(out[0]["general_contractor"], "Build Co")
+        self.assertEqual(out[0]["units"], 90)
+
+    def test_dallas_text_dates(self):
+        rows = [
+            {"permit_number": "D1", "issued_date": "11/03/26", "work_description": "New multifamily apartments 200 units", "permit_type": "Building (BU) Multi Family  New Construction", "value": "40000000", "street_address": "1 MAIN ST", "contractor": "Big GC"},
+            {"permit_number": "D2", "issued_date": "12/31/25", "work_description": "New multifamily apartments 200 units", "permit_type": "Building (BU) Multi Family  New Construction", "value": "40000000", "street_address": "2 MAIN ST"},
+        ]
+        src = {"name": "Dallas", "metro": "Dallas", "domain": "d", "dataset": "x", "date_field": "issued_date", "id_field": "permit_number",
+               "server_date_filter": False, "date_format": "%m/%d/%y", "text_fields": ["work_description", "permit_type"],
+               "title_field": "work_description", "cost_field": "value", "min_cost": 3000000, "address_fields": ["street_address"],
+               "contractor_field": "contractor", "days_back": 21}
+        with mock.patch.object(socrata, "http_get", lambda *a, **k: FakeResp(rows)):
+            out = socrata.collect(src, CFG, TODAY)
+        self.assertEqual([o["date"] for o in out], ["2026-11-03"])
+        self.assertEqual(out[0]["general_contractor"], "Big GC")
+
+    def test_nc_con_record_parsing(self):
+        lines = [
+            "I Burke E-012749-26 2/16/2026 $44,000,000 $50,000 No Not Yes 3/31/2026 943407 Grace Heights Health NF Relocate and construct a 120-bed replacement nursing facility",
+            "A New Hanover E-012800-26 3/2/2026 $9,000,000 $20,000 No 111111 Castle Creek ACH",
+            "Requested Hanover ACH beds from Castle Creek Memory Care, including 24 SCU beds",
+            "I Wake E-012801-25 1/2/2025 $5,000,000 No 222222 Old Assisted Living project",
+        ]
+        html = '<a href="/dhsr/coneed/pdf/applicationLogs/2026/Log_Mar.pdf?ver=1.1">x</a>'
+        src = {"name": "CON", "metro": "NC", "index_url": "https://info.ncdhhs.gov/dhsr/coneed/applicationlogs.html",
+               "keywords": ["nursing", "memory care", "assisted living"]}
+
+        def fake_get(url, **kw):
+            return FakeResp(text=html, content=b"pdf")
+
+        with mock.patch.object(nc_con, "http_get", fake_get), mock.patch.object(nc_con, "pdf_lines", lambda c: lines):
+            out = nc_con.collect(src, CFG, TODAY)
+        self.assertEqual(len(out), 2)  # the 2025 filing is older than a year
+        burke = [o for o in out if o["county"] == "Burke"][0]
+        self.assertEqual(burke["cost"], 44000000)
+        self.assertEqual(burke["date"], "2026-02-16")
+        self.assertEqual(burke["units"], 120)
+        self.assertTrue(burke["title"].startswith("Burke County: Grace Heights"))
+
+    def test_legistar_rezoning_review(self):
+        events = [{"EventId": 1, "EventBodyName": "Zoning Committee", "EventDate": "2026-11-12T00:00:00", "EventInSiteURL": "http://x/1"}]
+        items = [
+            {"EventItemId": 10, "EventItemMatterId": 99, "EventItemTitle": "Rezoning Petition: 2026-050 by Acme Dev", "EventItemMatterFile": "15-1"},
+            {"EventItemId": 11, "EventItemMatterId": 98, "EventItemTitle": "Rezoning Petition: 2026-051 by Gas Co", "EventItemMatterFile": "15-2"},
+            {"EventItemId": 12, "EventItemMatterId": 99, "EventItemTitle": "Rezoning Petition: 2026-050 by Acme Dev", "EventItemMatterFile": "15-1"},
+        ]
+        atts = {99: [{"MatterAttachmentName": "2026-050-RevisedSitePlan", "MatterAttachmentHyperlink": "http://pdf/99"}],
+                98: [{"MatterAttachmentName": "2026-051-RevisedSitePlan", "MatterAttachmentHyperlink": "http://pdf/98"}]}
+
+        def fake_get(url, params=None, **kw):
+            if url.endswith("/events"):
+                return FakeResp(events)
+            if url.endswith("/eventitems"):
+                return FakeResp(items)
+            if url.endswith("/attachments"):
+                return FakeResp(atts[int(url.split("/")[-2])])
+            return FakeResp(content=url.encode())
+
+        plans = {b"http://pdf/99": "Site area 4.5 acres. Up to 280 multifamily dwelling units.", b"http://pdf/98": "Convenience store and fuel canopy."}
+        src = {"name": "Charlotte", "metro": "Charlotte", "client": "charlottenc", "bodies": ["Zoning"], "also_review_titles": ["Rezoning Petition"]}
+        with mock.patch.object(legistar, "http_get", fake_get), mock.patch.object(legistar, "pdf_text", lambda c: plans[c]):
+            out = legistar.collect(src, CFG, TODAY)
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["units"], 280)
+        self.assertIn("4.5 acres", out[0]["detail"])
+        self.assertEqual(out[0]["documents"][0]["name"], "2026-050-RevisedSitePlan")
+
+
+class ArcgisTests(unittest.TestCase):
+    def test_raleigh_rows(self):
+        ms = 1793836800000  # 2026-11-05
+        payload = {"features": [
+            {"attributes": {"permitnum": "R1", "issueddate": ms, "proposedworkdescription": "New 4-story apartment building, 220 units", "estprojectcost": 41000000,
+                            "housingunitstotal": 220, "streetnum": "100", "streetname": "OAK", "streettype": "ST", "parcelownername": "Oak Holdings LLC", "contractorcompanyname": "Triangle GC"}},
+            {"attributes": {"permitnum": "R2", "issueddate": ms, "proposedworkdescription": "New warehouse", "estprojectcost": 9000000}},
+        ]}
+        src = {"name": "Raleigh", "metro": "Raleigh", "service_url": "https://x/FeatureServer/0", "date_field": "issueddate", "id_field": "permitnum",
+               "text_fields": ["proposedworkdescription"], "title_field": "proposedworkdescription", "cost_field": "estprojectcost", "min_cost": 3000000,
+               "units_field": "housingunitstotal", "address_fields": ["streetnum", "streetname", "streettype"], "contractor_field": "contractorcompanyname",
+               "owner_field": "parcelownername", "days_back": 21}
+        seen = {}
+
+        def fake_get(url, params=None, **kw):
+            seen.update(params)
+            return FakeResp(payload)
+
+        with mock.patch.object(arcgis, "http_get", fake_get):
+            out = arcgis.collect(src, CFG, TODAY)
+        self.assertIn("estprojectcost >= 3000000", seen["where"])
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["date"], "2026-11-05")
+        self.assertEqual(out[0]["units"], 220)
+        self.assertEqual(out[0]["owner"], "Oak Holdings LLC")
+        self.assertEqual(out[0]["general_contractor"], "Triangle GC")
 
 
 class RunTests(unittest.TestCase):
