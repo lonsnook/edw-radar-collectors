@@ -1,14 +1,19 @@
 {
- "run_at": "2026-11-09T15:26:32+00:00",
+ "run_at": "2026-11-09T15:46:20+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
    "found": 4,
    "error": "",
-   "new": 4
+   "details": {
+    "events_in_range": 9,
+    "events_read": 2,
+    "agenda_items_seen": 18
+   },
+   "new": 0
   },
   "Greensboro City Council agendas": {
-   "status": "ok",
+   "status": "disabled",
    "found": 0,
    "error": "",
    "new": 0
@@ -17,31 +22,54 @@
    "status": "ok",
    "found": 0,
    "error": "",
+   "details": {
+    "events_in_range": 2,
+    "events_read": 2,
+    "agenda_items_seen": 84
+   },
    "new": 0
   },
   "Chicago building permits": {
    "status": "ok",
    "found": 2,
    "error": "",
+   "details": {
+    "rows_returned": 99,
+    "newest_row_date": "2026-11-06"
+   },
    "new": 0
   },
   "Raleigh building permits": {
    "status": "ok",
    "found": 0,
    "error": "",
+   "details": {
+    "permits_in_window": 367,
+    "newest_permit_date": "2026-11-06",
+    "rows_returned": 1,
+    "newest_row_date": "2026-10-29"
+   },
    "new": 0
   },
   "Dallas building permits": {
    "status": "ok",
    "found": 1,
    "error": "",
-   "new": 1
+   "details": {
+    "rows_returned": 2272,
+    "newest_row_date": "2026-11-02"
+   },
+   "new": 0
   },
   "NC Certificate of Need application logs": {
    "status": "ok",
    "found": 8,
    "error": "",
-   "new": 8
+   "details": {
+    "pdfs_read": 9,
+    "records_seen": 176
+   },
+   "new": 0
   }
  }
 }
