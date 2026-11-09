@@ -1,0 +1,77 @@
+{
+ "items": [
+  {
+   "id": "112a1f1d250e9ec0",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "I Burke E-012749-26 2/16/2026 $44,000,000 $50,000 No Not Yes 3/31/2026 943407 Grace Heights Health NF Relocate and construct a 120-bed repla",
+   "detail": "Line from the state application log: I Burke E-012749-26 2/16/2026 $44,000,000 $50,000 No Not Yes 3/31/2026 943407 Grace Heights Health NF Relocate and construct a 120-bed replacement nursing facility Crystal Kearney Lisa Pittman",
+   "date": "",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/Application_Log_March_1_2026_Reviews.pdf",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "533eb55ee47b2dcb",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "Requested Hanover ACH beds from Castle Creek Memory Care, including 24 SCU beds",
+   "detail": "Line from the state application log: Requested Hanover ACH beds from Castle Creek Memory Care, including 24 SCU beds",
+   "date": "",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/Application_Log_March_1_2026_Reviews.pdf",
+   "units": null,
+   "matched": [
+    "memory care"
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "1a6e0e1ffb570b10",
+   "source": "Chicago building permits",
+   "metro": "Chicago",
+   "kind": "Building permit",
+   "title": "DDS 2019 CBC: FULL BUILDING PERMIT FOR A NEW 11-STORY HIGH RISE RESIDENTIAL APARTMENT BUILDING WITH 90 DWELLING UNITS, BUILDING MANAGEMENT O",
+   "detail": "5853 N BROADWAY. Reported cost $52,166,550.",
+   "date": "2026-11-06",
+   "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "units": 90,
+   "matched": [
+    "apartment"
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "52206267e9e7b1b0",
+   "source": "Chicago building permits",
+   "metro": "Chicago",
+   "kind": "Building permit",
+   "title": "(DDS 2019 CBC) NEW CONSTRUCTION OF A 25-STORY MIXED USE BUILDING TO INCLUDE GROUND FLOOR RETAIL, PARKING ON LEVELS 2 & 3 (163 AUTOMOBILE PAR",
+   "detail": "1022 W JACKSON BLVD. Reported cost $112,000,000.",
+   "date": "2026-10-27",
+   "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "units": 380,
+   "matched": [],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "5329850190e00403",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-050 by Mid-America Apartments, L.P.",
+   "detail": "Zoning Committee Work Session meeting.",
+   "date": "2026-11-04",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=2055&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [
+    "apartment"
+   ],
+   "first_seen": "2026-11-09"
+  }
+ ]
+}

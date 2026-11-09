@@ -1,0 +1,29 @@
+{
+ "run_at": "2026-11-09T14:05:27+00:00",
+ "sources": {
+  "Charlotte planning and zoning agendas": {
+   "status": "ok",
+   "found": 1,
+   "error": "",
+   "new": 1
+  },
+  "Chicago building permits": {
+   "status": "ok",
+   "found": 2,
+   "error": "",
+   "new": 2
+  },
+  "Dallas building permits": {
+   "status": "disabled",
+   "found": 0,
+   "error": "",
+   "new": 0
+  },
+  "NC Certificate of Need application logs": {
+   "status": "ok",
+   "found": 2,
+   "error": "",
+   "new": 0
+  }
+ }
+}
