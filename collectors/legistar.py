@@ -53,6 +53,9 @@ def collect(src, cfg, today):
     bodies = [b.lower() for b in src.get("bodies", [])]
     review_titles = [t.lower() for t in src.get("also_review_titles", [])]
     include, exclude = cfg["include"], cfg.get("exclude", ())
+    diag = src.get("_diag")
+    if diag is not None:
+        diag.update({"events_in_range": len(events), "events_read": 0, "agenda_items_seen": 0})
     seen, results = set(), []
     for ev in events:
         body = ev.get("EventBodyName") or ""
@@ -61,6 +64,9 @@ def collect(src, cfg, today):
         params = dict(base_params)
         params.update({"AgendaNote": 1, "MinutesNote": 1})
         entries = http_get("%s/events/%s/eventitems" % (base, ev["EventId"]), params=params).json()
+        if diag is not None:
+            diag["events_read"] += 1
+            diag["agenda_items_seen"] += len(entries)
         for entry in entries:
             title = entry.get("EventItemTitle") or entry.get("EventItemMatterName") or ""
             text = " ".join(

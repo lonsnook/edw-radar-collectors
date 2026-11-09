@@ -58,7 +58,8 @@
       "read_attachments": false,
       "days_back": 14,
       "days_ahead": 60,
-      "enabled": true
+      "enabled": false,
+      "note": "Greensboro's Legistar site has no meetings after 2014, so it cannot be read this way. Council agendas are checked by hand in the daily Claude run."
     },
     {
       "name": "Winston-Salem City Council agendas",

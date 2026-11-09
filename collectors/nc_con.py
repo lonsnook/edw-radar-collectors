@@ -87,8 +87,13 @@ def collect(src, cfg, today):
     keywords = src.get("keywords", [])
     max_age = src.get("max_age_days", 365)
     results, seen = [], set()
+    diag = src.get("_diag")
+    if diag is not None:
+        diag.update({"pdfs_read": len(links), "records_seen": 0})
     for link in links:
         for record in group_records(pdf_lines(http_get(link).content)):
+            if diag is not None:
+                diag["records_seen"] += 1
             rec = parse_record(record)
             matched = match_keywords(rec["text"], keywords)
             if not matched:

@@ -74,6 +74,11 @@ def collect(src, cfg, today):
 def build_items(rows, src, cfg, today):
     """Turn permit rows (dicts) into radar items. Shared by the Socrata and ArcGIS collectors."""
     since = today - timedelta(days=src.get("days_back", 21))
+    diag = src.get("_diag")
+    if diag is not None:
+        dates = [d for d in (_row_date(r, src) for r in rows) if d]
+        diag["rows_returned"] = len(rows)
+        diag["newest_row_date"] = max(dates).isoformat() if dates else ""
     results = []
     for row in rows:
         when = _row_date(row, src)

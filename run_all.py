@@ -42,9 +42,12 @@ def run(cfg, data_dir, today, collectors=None):
             log[src["name"]] = {"status": "disabled", "found": 0, "error": ""}
             continue
         try:
-            items = collectors[src["type"]](src, cfg, today)
+            diag = {}
+            items = collectors[src["type"]](dict(src, _diag=diag), cfg, today)
             found.extend(items)
             log[src["name"]] = {"status": "ok", "found": len(items), "error": ""}
+            if diag:
+                log[src["name"]]["details"] = diag
         except Exception as exc:  # one broken source must not stop the others
             log[src["name"]] = {"status": "error", "found": 0, "error": "%s: %s" % (type(exc).__name__, exc)}
     items, added = merge(existing, found, today)

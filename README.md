@@ -7,12 +7,13 @@ Daily scripts that read public government records for new multifamily and senior
 | Source | How | Stage it finds |
 |---|---|---|
 | Charlotte planning and zoning agendas | Legistar (client `charlottenc`), plus site plan PDFs on rezoning petitions | Rezoning, before construction |
-| Greensboro City Council agendas | Legistar (client `greensboro`) | Rezoning votes |
 | Winston-Salem City Council agendas | Legistar (client `winston-salem`) | Rezoning votes |
 | Chicago building permits | City open data portal, includes architect, owner and general contractor | Permit issued, construction starting |
 | Raleigh building permits | City ArcGIS service, $3M and up, new building, includes owner and contractor | Permit issued, construction starting |
 | Dallas building permits | City open data portal, $3M and up, new construction or multifamily | Permit issued, construction starting |
 | NC Certificate of Need application logs | State PDF logs, statewide (includes the Triad) | State approval filing, before design |
+
+Not readable this way: Greensboro City Council agendas (its Legistar site has no recent meetings; checked by hand each day instead).
 
 Not built yet: Raleigh rezoning cases (the page is a web table with PDFs), High Point agendas (CivicClerk), Winston-Salem and High Point permits, county loan and deed filings, HUD, bond disclosures.
 
