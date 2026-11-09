@@ -1,9 +1,21 @@
 {
- "run_at": "2026-11-09T15:18:55+00:00",
+ "run_at": "2026-11-09T15:26:32+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
-   "found": 1,
+   "found": 4,
+   "error": "",
+   "new": 4
+  },
+  "Greensboro City Council agendas": {
+   "status": "ok",
+   "found": 0,
+   "error": "",
+   "new": 0
+  },
+  "Winston-Salem City Council agendas": {
+   "status": "ok",
+   "found": 0,
    "error": "",
    "new": 0
   },
@@ -13,17 +25,23 @@
    "error": "",
    "new": 0
   },
-  "Dallas building permits": {
-   "status": "disabled",
+  "Raleigh building permits": {
+   "status": "ok",
    "found": 0,
    "error": "",
    "new": 0
   },
+  "Dallas building permits": {
+   "status": "ok",
+   "found": 1,
+   "error": "",
+   "new": 1
+  },
   "NC Certificate of Need application logs": {
    "status": "ok",
-   "found": 2,
+   "found": 8,
    "error": "",
-   "new": 0
+   "new": 8
   }
  }
 }

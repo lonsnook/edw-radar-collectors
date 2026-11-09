@@ -31,6 +31,167 @@
    ]
   },
   {
+   "id": "1bcbfdead3472a08",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "VI Craven County: Riverpoint Crest Nursing and NF Relocate no more than 12 NF beds from Rowan County Greg Yakaboski Lisa Pittman Rehabilitation Center Health and Rehabilitation Center for a total of no more than 117 NF beds upon project completion",
+   "detail": "Application P-012795-26, filed 2026-04-15, capital cost $391,624. Full line from the state log: VI Craven P-012795-26 4/15/2026 $391,624 $5,000 No Received N 6/1/2026 923028 Riverpoint Crest Nursing and NF Relocate no more than 12 NF beds from Rowan County Greg Yakaboski Lisa Pittman Rehabilitation Center Health and Rehabilitation Center for a total of no more than 117 NF beds upon project completion",
+   "date": "2026-04-15",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "county": "VI Craven",
+   "cost": 391624,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "8d0b7d8526fc2f76",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "II Forsyth County: Piney Grove Nursing and NF Relocate no more than 28 NF beds from Rowan County Cindy Bradford Lisa Pittman Rehabilitation Center Health and Rehabilitation Center for a total of no more than 120 NF beds upon project completion",
+   "detail": "Application G-012794-26, filed 2026-04-15, capital cost $5,173,104. Full line from the state log: II Forsyth G-012794-26 4/15/2026 $5,173,104 $17,519 No Not Requested Y 6/1/2026 923023 Piney Grove Nursing and NF Relocate no more than 28 NF beds from Rowan County Cindy Bradford Lisa Pittman Rehabilitation Center Health and Rehabilitation Center for a total of no more than 120 NF beds upon project completion",
+   "date": "2026-04-15",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "county": "II Forsyth",
+   "cost": 5173104,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "20acc59a5f00eb55",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "II Harnett County: Harnett Woods Nursing and NF Relocate no more than 20 NF beds from Chowan River Chalice Moore Lisa Pittman Rehabilitation Center Nursing and Rehabilitation Center for a total of no more than 120 NF beds upon project completion",
+   "detail": "Application M-012798-26, filed 2026-04-15, capital cost $5,066,474. Full line from the state log: II Harnett M-012798-26 4/15/2026 $5,066,474 $17,199 No Not Requested Y 6/1/2026 924467 Harnett Woods Nursing and NF Relocate no more than 20 NF beds from Chowan River Chalice Moore Lisa Pittman Rehabilitation Center Nursing and Rehabilitation Center for a total of no more than 120 NF beds upon project completion",
+   "date": "2026-04-15",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "county": "II Harnett",
+   "cost": 5066474,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "4f57d02a983a9e5d",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "Haywood County: Smoky Mountain Health and NF Relocate no more than 7 NF beds from Bethany Woods Tanya Saporito Micheala Mitchell Rehabilitation Center Nursing and Rehabilitation Center, 20 NF beds from Macon Valley Nursing and Rehabilitation Center, and 12 NF beds from Premier Nursing and Rehabilita",
+   "detail": "Application A-012796-26, filed 2026-04-15, capital cost $8,159,877. Full line from the state log: I Haywood A-012796-26 4/15/2026 $8,159,877 $26,480 No Not Requested Y 6/1/2026 051307 Smoky Mountain Health and NF Relocate no more than 7 NF beds from Bethany Woods Tanya Saporito Micheala Mitchell Rehabilitation Center Nursing and Rehabilitation Center, 20 NF beds from Macon Valley Nursing and Rehabilitation Center, and 12 NF beds from Premier Nursing and Rehabilitation Center for a total of no more than 89 NF beds upon project completion",
+   "date": "2026-04-15",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "county": "Haywood",
+   "cost": 8159877,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "0d9820a9d9319bc2",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "VI Pitt County: Ayden Court Nursing and NF Relocate no more than 3 NF beds from Bethany Woods Cindy Bradford Lisa Pittman Rehabilitation Center Nursing and Rehabilitation Center and no more than 35 NF beds from Rowan County Health and Rehabilitation Center for a total of no more than 120 NF beds upo",
+   "detail": "Application Q-012797-26, filed 2026-04-15, capital cost $7,380,860. Full line from the state log: VI Pitt Q-012797-26 4/15/2026 $7,380,860 $24,143 No Not Requested Y 6/1/2026 960259 Ayden Court Nursing and NF Relocate no more than 3 NF beds from Bethany Woods Cindy Bradford Lisa Pittman Rehabilitation Center Nursing and Rehabilitation Center and no more than 35 NF beds from Rowan County Health and Rehabilitation Center for a total of no more than 120 NF beds upon project completion",
+   "date": "2026-04-15",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": null,
+   "matched": [
+    "nursing"
+   ],
+   "county": "VI Pitt",
+   "cost": 7380860,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "74a316a3ed5f4ebb",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "VI Pitt County: Liberty Commons of Pitt CountyNF Develop a new 76-bed nursing facility by relocating no Ena Lightbourne Micheala Mitchell more than 40 NF beds from Roxboro Healthcare and Rehabilitation Center, no more than 32 NF beds from Yadkin Nursing Care Center and no more than 4 NF beds from Ma",
+   "detail": "Application Q-012771-26, filed 2026-04-14, capital cost $25,484,975. Full line from the state log: VI Pitt Q-012771-26 4/14/2026 $25,484,975 $50,000 No Not Requested Y 6/1/2026 260282 Liberty Commons of Pitt CountyNF Develop a new 76-bed nursing facility by relocating no Ena Lightbourne Micheala Mitchell more than 40 NF beds from Roxboro Healthcare and Rehabilitation Center, no more than 32 NF beds from Yadkin Nursing Care Center and no more than 4 NF beds from Mary Gran Nursing Center",
+   "date": "2026-04-14",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/ApplicationLogMay1_2026Reviews.pdf?ver=1.1",
+   "units": 76,
+   "matched": [
+    "nursing"
+   ],
+   "county": "VI Pitt",
+   "cost": 25484975,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "7d94e1ca1536e854",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "Burke County: Grace Heights Health NF Relocate and construct a 120-bed replacement nursing facility Crystal Kearney Lisa Pittman Requested and Rehabilitation Center",
+   "detail": "Application E-012749-26, filed 2026-02-16, capital cost $44,000,000. Full line from the state log: I Burke E-012749-26 2/16/2026 $44,000,000 $50,000 No Not Yes 3/31/2026 943407 Grace Heights Health NF Relocate and construct a 120-bed replacement nursing facility Crystal Kearney Lisa Pittman Requested and Rehabilitation Center",
+   "date": "2026-02-16",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/Application_Log_March_1_2026_Reviews.pdf",
+   "units": 120,
+   "matched": [
+    "nursing"
+   ],
+   "county": "Burke",
+   "cost": 44000000,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "54388d24047c2878",
+   "source": "NC Certificate of Need application logs",
+   "metro": "North Carolina",
+   "kind": "Certificate of Need filing",
+   "title": "New Hanover County: The Landings of New ACH Develop a new 64-bed ACH facility by relocating no more than 64 Yolanda Jackson Gloria Hale Requested Hanover ACH beds from Castle Creek Memory Care, including 24 SCU beds",
+   "detail": "Application O-012760-26, filed 2026-02-16, capital cost $12,976,445. Full line from the state log: V New Hanover O-012760-26 2/16/2026 $12,976,445 $40,929 No Not Yes 3/31/2026 260093 The Landings of New ACH Develop a new 64-bed ACH facility by relocating no more than 64 Yolanda Jackson Gloria Hale Requested Hanover ACH beds from Castle Creek Memory Care, including 24 SCU beds",
+   "date": "2026-02-16",
+   "url": "https://info.ncdhhs.gov/dhsr/coneed/pdf/applicationLogs/2026/Application_Log_March_1_2026_Reviews.pdf",
+   "units": 64,
+   "matched": [
+    "memory care"
+   ],
+   "county": "New Hanover",
+   "cost": 12976445,
+   "stage_hint": "State approval filing, before design",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "63ac4a380773d9ef",
+   "source": "Dallas building permits",
+   "metro": "Dallas",
+   "kind": "Building permit",
+   "title": "QTEAM New construction of MFD project. 406 dwelling units with structured parking. Restaurant shell on Floor 1. 3900 Lemmon",
+   "detail": "3900 LEMMON AVE, Dallas, TX. Reported cost $4,994,290. Contractor: MISSION RIDGE CONSULTANTS.",
+   "date": "2026-11-02",
+   "url": "https://www.dallasopendata.com/",
+   "units": 406,
+   "matched": [],
+   "address": "3900 LEMMON AVE, Dallas, TX",
+   "cost": 4994289,
+   "general_contractor": "MISSION RIDGE CONSULTANTS",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-09"
+  },
+  {
    "first_seen": "2026-11-09",
    "id": "1a6e0e1ffb570b10",
    "source": "Chicago building permits",
@@ -72,6 +233,82 @@
    "matched": [
     "apartment"
    ]
+  },
+  {
+   "id": "204bae274fde320a",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2025-036 by Rangeworks",
+   "detail": "Zoning Committee Work Session meeting. Status: Agenda Ready. DEFERRAL",
+   "date": "2026-11-04",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=2055&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26912",
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "112d1327c851caf8",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-023 by Middleburg",
+   "detail": "Zoning Committee Work Session meeting. Status: Agenda Ready. DEFERRAL",
+   "date": "2026-11-04",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=2055&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26913",
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "caac9a78bc4a9b33",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-025 by Olympia & Wright Homes",
+   "detail": "Zoning Committee Work Session meeting. Status: Agenda Ready. DEFERRAL",
+   "date": "2026-11-04",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=2055&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26914",
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "f679eeaefa8ca9c9",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-050 by Mid-America Apartments, L.P.",
+   "detail": "Zoning Committee Work Session meeting. Status: Agenda Ready. Plan details: about 3.65 acres.",
+   "date": "2026-11-04",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=2055&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [
+    "apartment"
+   ],
+   "matter_file": "15-26920",
+   "documents": [
+    {
+     "name": "2026-050-RevisedSitePlan10-22-26",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/fbe2602a-7ca8-4d3c-aed1-7fae0ec747ce.pdf"
+    },
+    {
+     "name": "2026-050-PostHSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/2d068351-bf45-4aa0-8272-e78b42464211.pdf"
+    },
+    {
+     "name": "2026-050-Consistency",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/cb5ba195-a1f3-419d-9e87-281792c34460.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-09"
   }
  ]
 }
