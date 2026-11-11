@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-10T11:46:58+00:00",
+ "run_at": "2026-11-11T11:51:21+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
@@ -34,7 +34,7 @@
    "found": 2,
    "error": "",
    "details": {
-    "rows_returned": 96,
+    "rows_returned": 89,
     "newest_row_date": "2026-11-06"
    },
    "new": 0
@@ -44,7 +44,7 @@
    "found": 0,
    "error": "",
    "details": {
-    "permits_in_window": 357,
+    "permits_in_window": 338,
     "newest_permit_date": "2026-11-06",
     "rows_returned": 1,
     "newest_row_date": "2026-10-29"
