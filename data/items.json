@@ -1,6 +1,139 @@
 {
  "items": [
   {
+   "id": "0247f9e95b0045d3",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-042 by Eminent Investments, LLC",
+   "detail": "City Council Zoning Meeting meeting. Status: Agenda Ready. Plan details: about 5.46 acres; 153 units or beds mentioned.",
+   "date": "2026-11-16",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=1974&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": 153,
+   "matched": [
+    "multi-family"
+   ],
+   "matter_file": "15-26984",
+   "documents": [
+    {
+     "name": "2026-042-PHSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/43b256d0-2a6d-4f11-8bf9-0d81df7268e3.pdf"
+    },
+    {
+     "name": "2026-042-SitePlanRev-26-8-17",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/556e0b6f-d624-46fd-937d-3ba4b4eb4f96.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "e81135609414fd60",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-055 by Sameer Gupta",
+   "detail": "City Council Zoning Meeting meeting. Status: Agenda Ready. Plan details: plan PDFs could not be read automatically, open the documents.",
+   "date": "2026-11-16",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=1974&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26985",
+   "documents": [
+    {
+     "name": "2026-055-PHSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/f39e5a3e-5fce-4d3f-8d8e-0f3f030d916c.pdf"
+    },
+    {
+     "name": "2026-055-CDNotes-2026-10-04",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/810fd0d5-49d2-40a0-b389-facefdbe74be.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "492cf6857ce831ff",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-078 by Charlotte Planning, Design & Development Department - Text Amendment",
+   "detail": "City Council Zoning Meeting meeting. Status: Agenda Ready. Plan details: plan PDFs could not be read automatically, open the documents. Text Amendment",
+   "date": "2026-11-16",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=1974&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26988",
+   "documents": [
+    {
+     "name": "2026-078 Text Amendment 10.15.26",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/6643b6fb-6941-4a23-9939-de387dbd8109.pdf"
+    },
+    {
+     "name": "2026-078-PHSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/6db1c07c-b961-4ae1-ace5-683071a3f782.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "301f8595a8da1657",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-030 by Olympia & Wright LLC",
+   "detail": "City Council Zoning Meeting meeting. Status: Agenda Ready. Plan details: plan PDFs could not be read automatically, open the documents.",
+   "date": "2026-11-16",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=1974&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [],
+   "matter_file": "15-26998",
+   "documents": [
+    {
+     "name": "2026-030-ZCR",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/7fe1e3d2-ac53-4aa8-bda6-84e2c356c500.pdf"
+    },
+    {
+     "name": "2026-030-FSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/2fc4c6cb-f3bf-4a8a-af87-e4923ed4f049.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "df003cd0614b8d09",
+   "source": "Charlotte planning and zoning agendas",
+   "metro": "Charlotte",
+   "kind": "Planning agenda",
+   "title": "Rezoning Petition: 2026-050 by Mid-America Apartments, L.P.",
+   "detail": "City Council Zoning Meeting meeting. Status: Agenda Ready.",
+   "date": "2026-11-16",
+   "url": "https://charlottenc.legistar.com/MeetingDetail.aspx?LEGID=1974&GID=536&G=BE036CCA-47DC-4396-B00E-55A8D4A8D752",
+   "units": null,
+   "matched": [
+    "apartment"
+   ],
+   "matter_file": "15-27000",
+   "documents": [
+    {
+     "name": "2026-050-ZCR",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/56009ab8-61f9-46a9-b245-4c02927d1df1.pdf"
+    },
+    {
+     "name": "2026-050-FSA",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/8334a381-7967-457b-90aa-c5406e42c785.pdf"
+    },
+    {
+     "name": "2026-050-RevisedSitePlan10-22-26",
+     "url": "https://charlottenc.legistar1.com/charlottenc/attachments/02320c4a-c13c-4a7e-bc0e-f38dddc7e307.pdf"
+    }
+   ],
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-13"
+  },
+  {
    "first_seen": "2026-11-09",
    "id": "112a1f1d250e9ec0",
    "source": "NC Certificate of Need application logs",
