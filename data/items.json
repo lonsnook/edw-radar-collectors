@@ -1,6 +1,36 @@
 {
  "items": [
   {
+   "id": "d6f42228d7689abf",
+   "source": "Winston-Salem City Council agendas",
+   "metro": "Triad (Winston-Salem)",
+   "kind": "Planning agenda",
+   "title": "Public Hearing and Consideration of a Zoning Petition of City of Winston-Salem (W-3686) from Forsyth County RS20 and MU-S to City of Winston-Salem RS20 and MU-S; Property is Located at the Northern Terminus of Eagle Crest Drive; \u2013 Containing Approximately 47.93 Acres (Northeast Ward) \r\n[Planning Boa",
+   "detail": "City Council meeting. Status: General Agenda.",
+   "date": "2026-11-16",
+   "url": "https://winston-salem.legistar.com/MeetingDetail.aspx?LEGID=2845&GID=657&G=8C57BC0C-9DFF-4123-B207-922118F33F71",
+   "units": null,
+   "matched": [],
+   "matter_file": "26-0299",
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "1214ab9cb3a11df8",
+   "source": "Winston-Salem City Council agendas",
+   "metro": "Triad (Winston-Salem)",
+   "kind": "Planning agenda",
+   "title": "Public Hearing and Consideration of a Zoning Petition of Salem Creek Properties, LLC (W-3704) from LI-L to LI-L (Building Materials Supply; Wholesale Trade A; Wholesale Trade B; Building Contractors, General; Building Contractors, Heavy; Offices; Services, A; Services, B; Storage Services, Retail; T",
+   "detail": "City Council meeting. Status: General Agenda.",
+   "date": "2026-11-16",
+   "url": "https://winston-salem.legistar.com/MeetingDetail.aspx?LEGID=2845&GID=657&G=8C57BC0C-9DFF-4123-B207-922118F33F71",
+   "units": null,
+   "matched": [],
+   "matter_file": "26-0463",
+   "stage_hint": "Rezoning or planning stage, before construction",
+   "first_seen": "2026-11-14"
+  },
+  {
    "id": "0247f9e95b0045d3",
    "source": "Charlotte planning and zoning agendas",
    "metro": "Charlotte",
