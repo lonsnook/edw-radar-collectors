@@ -1,6 +1,27 @@
 {
  "items": [
   {
+   "id": "dcf0985c63575bad",
+   "source": "Chicago building permits",
+   "metro": "Chicago",
+   "kind": "Building permit",
+   "title": "SPR 2019 CBC: ERECT NEW 5 STORY, 29DU APARTMENT BUILDING W/GROUND FLOOR 26 CAR GARAGE, PARTIAL BASEMENT AND MASONRY TRASH ENCLOSURE AS PER PLANS (OCCUPANCY GROUPS R-2, S-2; TYPE III-A CONSTRUCTION)",
+   "detail": "2606 S PEORIA ST. Reported cost $5,000,000. Named on permit: Owner: 860 LLC; Architect: VARI, RONALD; Contractor-Electrical: KUO CONSTRUCTION, INC.; Contractor-General Contractor: INTERSTATE MECHANICAL & CONSTRUCTION, INC.; Masonry Contractor: DS CONSTRUCTION, INC.; Masonry Contractor: MKS MASONRY; Contractor-Plumber/Plumbing: INTERSTATE MECHANICAL &; Contractor-Refrigeration: INTERSTATE MECHANICAL.",
+   "date": "2026-11-16",
+   "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "units": null,
+   "matched": [
+    "apartment"
+   ],
+   "address": "2606 S PEORIA ST",
+   "cost": 5000000,
+   "architect": "VARI, RONALD",
+   "owner": "860 LLC",
+   "general_contractor": "INTERSTATE MECHANICAL & CONSTRUCTION, INC.",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-18"
+  },
+  {
    "id": "d6f42228d7689abf",
    "source": "Winston-Salem City Council agendas",
    "metro": "Triad (Winston-Salem)",
