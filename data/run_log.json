@@ -1,14 +1,14 @@
 {
- "run_at": "2026-11-18T11:56:52+00:00",
+ "run_at": "2026-11-19T11:54:20+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
-   "found": 9,
+   "found": 5,
    "error": "",
    "details": {
     "events_in_range": 5,
-    "events_read": 2,
-    "agenda_items_seen": 31
+    "events_read": 1,
+    "agenda_items_seen": 24
    },
    "new": 0
   },
@@ -35,17 +35,17 @@
    "error": "",
    "details": {
     "rows_returned": 69,
-    "newest_row_date": "2026-11-16"
+    "newest_row_date": "2026-11-17"
    },
-   "new": 1
+   "new": 0
   },
   "Raleigh building permits": {
    "status": "ok",
    "found": 0,
    "error": "",
    "details": {
-    "permits_in_window": 299,
-    "newest_permit_date": "2026-11-16",
+    "permits_in_window": 292,
+    "newest_permit_date": "2026-11-17",
     "rows_returned": 1,
     "newest_row_date": "2026-10-29"
    },
@@ -66,8 +66,8 @@
    "found": 8,
    "error": "",
    "details": {
-    "pdfs_read": 9,
-    "records_seen": 176
+    "pdfs_read": 10,
+    "records_seen": 179
    },
    "new": 0
   }
