@@ -1,6 +1,46 @@
 {
  "items": [
   {
+   "id": "7ee1cab532aa4c6f",
+   "source": "Chicago building permits",
+   "metro": "Chicago",
+   "kind": "Building permit",
+   "title": "DDS 2019 CBC:  FULL BUILDING PERMIT FOR A 33-STORY, 383 DWELLING UNIT MIXED OCCUPANCY BUILDING (OCCUPANCY GROUPS: R-2, M, S-2; TYPE 1A CONSTRUCTION). CONSULTANT REVIEWER: V3 COMPANIES OF IL",
+   "detail": "410 N ELIZABETH ST. Reported cost $134,000,000. Named on permit: Owner: 410 N ELIZABETH DEVELOPMENT LLC; Architect: VRAJITORU, COSMIN; Contractor-Electrical: TITAN ELECTRIC LLC; Expeditor: CORNERSTONE PERMIT COMPANY; Contractor-General Contractor: CLARK CONSTRUCTION GROUP CHICAGO LLC; Masonry Contractor: ALL MASONRY CONST. CO. INC; Contractor-Plumber/Plumbing: NORMAN MECHANICAL; Contractor-Ventilation: HEATMASTERS INC.",
+   "date": "2026-11-18",
+   "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "units": 383,
+   "matched": [],
+   "address": "410 N ELIZABETH ST",
+   "cost": 134000000,
+   "architect": "VRAJITORU, COSMIN",
+   "owner": "410 N ELIZABETH DEVELOPMENT LLC",
+   "general_contractor": "CLARK CONSTRUCTION GROUP CHICAGO LLC",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "136e450f16d66ea7",
+   "source": "Chicago building permits",
+   "metro": "Chicago",
+   "kind": "Building permit",
+   "title": "DDS 2019 CBC: FOUNDATION PERMIT FOR A  5-STORY GROUND UP MULTI-FAMILY BUILDING W/ 29 UNITS.  OCCUPANCY R-2; CONSTRUCTION TYPE IIIA). ALL AS PER PLANS. CONSULTANT REVIEWER: V3 COMPANIES OF IL",
+   "detail": "3631 N SHEFFIELD AVE. Reported cost $10,000,000. Named on permit: Architect: STYER, ERIC L; Expeditor: CORNERSTONE PERMIT COMPANY; Contractor-General Contractor: LG COMMERCIAL LLC; Contractor-Plumber/Plumbing: MIHOS PLUMBING AND HEATING,INC; Owner: TORCO BUILDING LLC.",
+   "date": "2026-11-18",
+   "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "units": 29,
+   "matched": [
+    "multi-family"
+   ],
+   "address": "3631 N SHEFFIELD AVE",
+   "cost": 10000000,
+   "architect": "STYER, ERIC L",
+   "owner": "TORCO BUILDING LLC",
+   "general_contractor": "LG COMMERCIAL LLC",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "dcf0985c63575bad",
    "source": "Chicago building permits",
    "metro": "Chicago",
