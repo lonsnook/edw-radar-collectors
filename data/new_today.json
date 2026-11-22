@@ -1,4 +1,46 @@
 {
- "date": "2026-11-21",
- "items": []
+ "date": "2026-11-22",
+ "items": [
+  {
+   "id": "2bafb3ba5ee97192",
+   "source": "Raleigh building permits",
+   "metro": "Raleigh",
+   "kind": "Building permit",
+   "title": "Building 3 Construction of a new multifamily apartment building within the Fifth Oak Multifamily dev",
+   "detail": "5230  Pinecross Way. Reported cost $3,320,971. Contractor: Front Street Construction Services, LLC.",
+   "date": "2026-11-19",
+   "url": "https://data.raleighnc.gov",
+   "units": null,
+   "matched": [
+    "multifamily",
+    "multi-family",
+    "apartment"
+   ],
+   "address": "5230  Pinecross Way",
+   "cost": 3320971,
+   "general_contractor": "Front Street Construction Services, LLC",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "6e7d90becbd6d2c0",
+   "source": "Raleigh building permits",
+   "metro": "Raleigh",
+   "kind": "Building permit",
+   "title": "New 4-story senior apartment building of VA construction - wood frame and wood truss construction wi",
+   "detail": "1400  Garner Rd. Reported cost $15,833,654. Owner: HOKE STREET APARTMENTS LLC. Contractor: Wallick Communities.",
+   "date": "2026-11-18",
+   "url": "https://data.raleighnc.gov",
+   "units": null,
+   "matched": [
+    "apartment"
+   ],
+   "address": "1400  Garner Rd",
+   "cost": 15833653,
+   "owner": "HOKE STREET APARTMENTS LLC",
+   "general_contractor": "Wallick Communities",
+   "stage_hint": "Permit issued, construction starting or underway",
+   "first_seen": "2026-11-22"
+  }
+ ]
 }

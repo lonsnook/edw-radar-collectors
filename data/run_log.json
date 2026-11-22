@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-21T11:42:04+00:00",
+ "run_at": "2026-11-22T11:41:04+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
@@ -34,22 +34,22 @@
    "found": 4,
    "error": "",
    "details": {
-    "rows_returned": 65,
-    "newest_row_date": "2026-11-19"
+    "rows_returned": 71,
+    "newest_row_date": "2026-11-20"
    },
    "new": 0
   },
   "Raleigh building permits": {
    "status": "ok",
-   "found": 0,
+   "found": 2,
    "error": "",
    "details": {
-    "permits_in_window": 262,
-    "newest_permit_date": "2026-11-17",
-    "rows_returned": 0,
-    "newest_row_date": ""
+    "permits_in_window": 334,
+    "newest_permit_date": "2026-11-20",
+    "rows_returned": 2,
+    "newest_row_date": "2026-11-19"
    },
-   "new": 0
+   "new": 2
   },
   "Dallas building permits": {
    "status": "ok",
