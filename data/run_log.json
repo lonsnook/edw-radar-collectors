@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-22T11:41:04+00:00",
+ "run_at": "2026-11-23T11:51:54+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
@@ -44,12 +44,12 @@
    "found": 2,
    "error": "",
    "details": {
-    "permits_in_window": 334,
+    "permits_in_window": 332,
     "newest_permit_date": "2026-11-20",
     "rows_returned": 2,
     "newest_row_date": "2026-11-19"
    },
-   "new": 2
+   "new": 0
   },
   "Dallas building permits": {
    "status": "ok",
