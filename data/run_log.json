@@ -1,12 +1,12 @@
 {
- "run_at": "2026-11-23T11:51:54+00:00",
+ "run_at": "2026-11-24T11:54:17+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
    "found": 5,
    "error": "",
    "details": {
-    "events_in_range": 4,
+    "events_in_range": 3,
     "events_read": 1,
     "agenda_items_seen": 24
    },
@@ -23,9 +23,9 @@
    "found": 2,
    "error": "",
    "details": {
-    "events_in_range": 2,
-    "events_read": 2,
-    "agenda_items_seen": 67
+    "events_in_range": 1,
+    "events_read": 1,
+    "agenda_items_seen": 21
    },
    "new": 0
   },
@@ -34,7 +34,7 @@
    "found": 4,
    "error": "",
    "details": {
-    "rows_returned": 71,
+    "rows_returned": 70,
     "newest_row_date": "2026-11-20"
    },
    "new": 0
@@ -44,7 +44,7 @@
    "found": 2,
    "error": "",
    "details": {
-    "permits_in_window": 332,
+    "permits_in_window": 294,
     "newest_permit_date": "2026-11-20",
     "rows_returned": 2,
     "newest_row_date": "2026-11-19"
@@ -53,7 +53,7 @@
   },
   "Dallas building permits": {
    "status": "ok",
-   "found": 1,
+   "found": 0,
    "error": "",
    "details": {
     "rows_returned": 2272,
