@@ -1,16 +1,16 @@
 {
- "run_at": "2026-11-24T11:54:17+00:00",
+ "run_at": "2026-11-25T11:57:55+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
-   "found": 5,
+   "found": 11,
    "error": "",
    "details": {
-    "events_in_range": 3,
-    "events_read": 1,
-    "agenda_items_seen": 24
+    "events_in_range": 4,
+    "events_read": 2,
+    "agenda_items_seen": 33
    },
-   "new": 0
+   "new": 6
   },
   "Greensboro City Council agendas": {
    "status": "disabled",
@@ -34,8 +34,8 @@
    "found": 4,
    "error": "",
    "details": {
-    "rows_returned": 70,
-    "newest_row_date": "2026-11-20"
+    "rows_returned": 78,
+    "newest_row_date": "2026-11-23"
    },
    "new": 0
   },
@@ -44,8 +44,8 @@
    "found": 2,
    "error": "",
    "details": {
-    "permits_in_window": 294,
-    "newest_permit_date": "2026-11-20",
+    "permits_in_window": 283,
+    "newest_permit_date": "2026-11-21",
     "rows_returned": 2,
     "newest_row_date": "2026-11-19"
    },
