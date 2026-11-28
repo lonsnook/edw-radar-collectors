@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-27T11:54:34+00:00",
+ "run_at": "2026-11-28T11:45:48+00:00",
  "sources": {
   "Charlotte planning and zoning agendas": {
    "status": "ok",
@@ -31,10 +31,10 @@
   },
   "Chicago building permits": {
    "status": "ok",
-   "found": 4,
+   "found": 3,
    "error": "",
    "details": {
-    "rows_returned": 82,
+    "rows_returned": 76,
     "newest_row_date": "2026-11-25"
    },
    "new": 0
@@ -44,7 +44,7 @@
    "found": 2,
    "error": "",
    "details": {
-    "permits_in_window": 280,
+    "permits_in_window": 266,
     "newest_permit_date": "2026-11-25",
     "rows_returned": 2,
     "newest_row_date": "2026-11-19"
